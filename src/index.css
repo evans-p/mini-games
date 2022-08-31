@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  min-width: 350px;
+}
+body {
+  min-width: 350px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

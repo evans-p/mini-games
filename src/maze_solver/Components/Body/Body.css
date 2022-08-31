@@ -1,0 +1,31 @@
+.Body {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Body-Orizontal {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Body-Orizontal::after {
+  content: "";
+  width: 20vw;
+  height: 40vw;
+}
+
+@media (max-width: 1000px) {
+  .Body {
+    margin-top: 210px;
+  }
+  .Body-Orizontal {
+    margin-top: 210px;
+    flex-direction: column;
+  }
+  .Body-Orizontal::after {
+    display: none;
+  }
+}

@@ -1,0 +1,89 @@
+.HomePageApp {
+  display: flex;
+  justify-content: center;
+}
+.HomePageApp nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #3e517a;
+  z-index: 2;
+}
+
+.HomePageApp .main {
+  width: 100%;
+  height: 90vh;
+  margin-top: 10vh;
+  padding: 0 5vw;
+  padding-bottom: 0;
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  grid-column-gap: 10vw;
+}
+
+.HomePageApp .main .item {
+  margin-top: 5vh;
+  width: 40vw;
+  height: 40vw;
+  border: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    135deg,
+    rgba(197, 197, 197, 1) 0%,
+    rgba(197, 197, 197, 1) 25%,
+    rgba(148, 155, 150, 0) 75%,
+    rgba(148, 155, 150, 0) 100%
+  );
+}
+.HomePageApp .main h2 {
+  height: 20px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 3px;
+  font-size: 4vw;
+  color: #313131;
+  position: relative;
+  top: -6vw;
+}
+.HomePageApp .main .item::after {
+  content: "";
+  height: 20px;
+}
+.HomePageApp .content {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  transition: all 0.2s ease-in-out;
+}
+.HomePageApp .content::after {
+  content: "";
+}
+
+.HomePageApp .main .item:hover > .content {
+  transform: scale(1.9);
+}
+
+@media only screen and (max-width: 700px) {
+  .HomePageApp .main {
+    grid-template-columns: 60vw;
+    padding: 0 20vw;
+  }
+  .HomePageApp .main .item {
+    width: 60vw;
+    height: 60vw;
+  }
+  .HomePageApp .content {
+    width: 32vw;
+    height: 32vw;
+  }
+}

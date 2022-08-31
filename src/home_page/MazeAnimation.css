@@ -1,0 +1,91 @@
+.MazeAnimation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.MazeAnimation .animation-element {
+  width: 12.5%;
+}
+
+.MazeAnimation .start {
+  background-color: chartreuse;
+}
+.MazeAnimation .white {
+  background-color: #fff;
+}
+.MazeAnimation .black {
+  background-color: #313131;
+}
+
+.MazeAnimation:hover > .start {
+  animation: move-around 10s infinite;
+}
+
+@keyframes move-around {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(300%, 0);
+  }
+  10% {
+    transform: translate(300%, -200%);
+  }
+  15% {
+    transform: translate(100%, -200%);
+  }
+  20% {
+    transform: translate(300%, -200%);
+  }
+  25% {
+    transform: translate(300%, 200%);
+  }
+  30% {
+    transform: translate(100%, 200%);
+  }
+  35% {
+    transform: translate(100%, 300%);
+  }
+  40% {
+    transform: translate(100%, 200%);
+  }
+  45% {
+    transform: translate(400%, 200%);
+  }
+  50% {
+    transform: translate(400%, 300%);
+  }
+  55% {
+    transform: translate(400%, 200%);
+  }
+  60% {
+    transform: translate(300%, 200%);
+  }
+  65% {
+    transform: translate(300%, -100%);
+  }
+  70% {
+    transform: translate(600%, -100%);
+  }
+  75% {
+    transform: translate(600%, 200%);
+  }
+  80% {
+    transform: translate(600%, 0%);
+  }
+  85% {
+    transform: translate(500%, 0%);
+  }
+  90% {
+    transform: translate(500%, -200%);
+  }
+  95% {
+    transform: translate(800%, -200%);
+  }
+  100% {
+    transform: translate(800%, -200%);
+  }
+}

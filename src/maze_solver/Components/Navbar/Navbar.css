@@ -1,0 +1,56 @@
+.Navbar {
+  width: 100%;
+  height: 100px;
+  /* position: -webkit-sticky; */
+  position: fixed;
+  top: 0;
+  background-color: #564e58;
+  -webkit-box-shadow: 0px 10px 11px 1px rgba(49, 49, 49, 0.51);
+  -moz-box-shadow: 0px 10px 11px 1px rgba(49, 49, 49, 0.51);
+  box-shadow: 0px 10px 11px 1px rgba(49, 49, 49, 0.51);
+  z-index: 2;
+}
+
+.Navbar-components {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.Navbar button {
+  margin-right: 20px;
+  width: 240px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #904e55;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.Navbar button:hover {
+  border: 2px solid #904e55;
+  color: #904e55;
+  background-color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .Navbar {
+    height: 160px;
+  }
+  .Navbar-components {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* transform: scale(0.9); */
+  }
+  .Navbar button {
+    margin: 0px;
+    width: 310px;
+  }
+}

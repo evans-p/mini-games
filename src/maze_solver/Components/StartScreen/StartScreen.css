@@ -1,0 +1,32 @@
+.StartScreen {
+  /* position: absolute;
+  top: 150px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -3;
+}
+
+.StartScreen h1 {
+  font-family: "Oswald", sans-serif;
+  margin-top: 20px;
+  font-size: 40px;
+}
+.StartScreen h3 {
+  font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+  .StartScreen {
+    width: 80%;
+    top: 210px;
+    margin: 0 auto;
+  }
+  .StartScreen h1 {
+    font-size: 30px;
+  }
+  .StartScreen h3 {
+    font-size: 15px;
+  }
+}

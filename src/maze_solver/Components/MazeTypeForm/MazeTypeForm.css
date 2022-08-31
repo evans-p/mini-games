@@ -1,0 +1,28 @@
+.MazeTypeForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  font-size: 20px;
+  margin: 0 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.MazeTypeForm select {
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-size: 15px;
+  color: white;
+  background-color: #88a096;
+  cursor: pointer;
+}
+
+.MazeTypeForm select:hover {
+  border: 2px solid #88a096;
+  font-size: 15px;
+  color: #88a096;
+  background-color: #fff;
+}

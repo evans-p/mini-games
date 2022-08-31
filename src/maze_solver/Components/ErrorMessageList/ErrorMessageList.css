@@ -1,0 +1,11 @@
+.ErrorMessageList {
+  position: fixed;
+  top: 150px;
+  widows: 100%;
+}
+
+@media (max-width: 1000px) {
+  .ErrorMessageList {
+    top: 280px;
+  }
+}

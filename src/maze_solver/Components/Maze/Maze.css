@@ -1,0 +1,24 @@
+.Maze {
+  width: 36vw;
+  height: 36vw;
+  -webkit-box-shadow: 0px 10px 11px 1px rgba(49, 49, 49, 0.51);
+  -moz-box-shadow: 0px 10px 11px 1px rgba(49, 49, 49, 0.51);
+  box-shadow: 0px 10px 11px 1px rgba(49, 49, 49, 0.51);
+  display: flex;
+  flex-wrap: wrap;
+}
+.Maze::before {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: red;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .Maze {
+    width: 80vw;
+    height: 80vw;
+  }
+}

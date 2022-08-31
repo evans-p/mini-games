@@ -1,0 +1,35 @@
+.SelectionPad {
+  width: 60px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+
+.SelectionPad .pad-button {
+  width: 16px;
+  height: 16px;
+  margin: 2px;
+  background-color: #904e55;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.SelectionPad .clear-button {
+  width: 56px;
+  height: 16px;
+  margin: 2px;
+  background-color: #904e55;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  border-radius: 2px;
+  cursor: pointer;
+}

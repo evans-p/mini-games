@@ -1,0 +1,41 @@
+.AlgorithmSelectionForm {
+  width: 80%;
+  margin: 10px 0px;
+}
+
+.AlgorithmSelectionForm select {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-align-last: center;
+  margin: 0;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #88a096;
+  border: 2px solid white;
+  transition: all 0.2s ease-in-out;
+}
+.AlgorithmSelectionForm option {
+  text-align: center;
+}
+
+.AlgorithmSelectionForm select:hover {
+  color: #88a096;
+  border-color: #88a096;
+  background-color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .AlgorithmSelectionForm {
+    width: 23%;
+    margin: 0;
+    margin-top: auto;
+  }
+  .AlgorithmSelectionForm select {
+    height: 50px;
+    font-size: 12px;
+    text-align: center;
+  }
+}

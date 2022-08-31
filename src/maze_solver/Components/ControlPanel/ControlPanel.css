@@ -1,0 +1,68 @@
+.ControlPanel {
+  width: 20vw;
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+}
+
+.ControlPanel button {
+  width: 80%;
+  height: 50px;
+  margin: 10px 0px;
+  padding: 5px 0px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #fff;
+  z-index: 100000;
+  border: 2px solid white;
+  transition: all 0.2s ease-in-out;
+}
+
+.ControlPanel .start,
+.ControlPanel .end {
+  background-color: #88a096;
+}
+.ControlPanel .start:hover,
+.ControlPanel .end:hover,
+.ControlPanel .start-active,
+.ControlPanel .end-active {
+  color: #88a096;
+  border-color: #88a096;
+  background-color: #fff;
+}
+
+.ControlPanel .solve {
+  background-color: #904e55;
+}
+.ControlPanel .solve:hover {
+  color: #904e55;
+  border-color: #904e55;
+  background-color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .ControlPanel {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 210px;
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: translateY(-50px);
+  }
+  .ControlPanel h2 {
+    display: none;
+  }
+  .ControlPanel button {
+    width: 23%;
+    margin: 0px;
+    margin-top: auto;
+    height: 50px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,39 @@
+.StartScreen {
+  /* background-color: red; */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.StartScreen .title {
+  font-size: 2.3em;
+  margin: 5px 0px;
+}
+
+.StartScreen .subtitle {
+  font-size: 0.9em;
+  margin-bottom: 30px;
+}
+
+.StartScreen button {
+  margin-right: 20px;
+  width: 240px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #904e55;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0px 10px 11px 1px rgba(49, 49, 49, 0.51);
+  -moz-box-shadow: 0px 10px 11px 1px rgba(49, 49, 49, 0.51);
+  box-shadow: 0px 10px 11px 1px rgba(49, 49, 49, 0.51);
+  z-index: 2;
+}
+.StartScreen button:hover {
+  border: 2px solid #904e55;
+  color: #904e55;
+  background-color: #fff;
+}
